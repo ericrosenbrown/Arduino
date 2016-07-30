@@ -9,7 +9,7 @@ while True:
     #print ser.readline()
     food = raw_input("What food do you want to know about?")
     try:
-        link = urllib2.urlopen("https://en.wikpedia.org/wiki/"+food)
+        link = urllib2.urlopen("https://en.wikipedia.org/wiki/"+food)
         linkContent = link.read()
         fruitCount = linkContent.count("fruit")
         vegeCount = linkContent.count("vegetable")
